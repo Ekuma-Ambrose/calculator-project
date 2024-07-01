@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(2, 2, 17);
+}
+
+.parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 80px;
+    width: 400px;
+}
+
+
+
+.child{
+    border: 1px solid rgb(4, 4, 19);
+    background-color: rgb(2, 2, 43);
+}
+
+.output{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding-left: 10px;
+    padding-top: 30px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: white;
+}
+
+.parent button{
+    color: white;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.red{
+    grid-column: 1/3;
+    background-color: red;
+    border: 1px solid red;
+}
+
+.plus{
+    grid-row: span 2;
+}
+
+.yellow{
+    background-color: rgb(200, 184, 9);
+    border: 1px solid rgb(203, 203, 19);
+}
+
